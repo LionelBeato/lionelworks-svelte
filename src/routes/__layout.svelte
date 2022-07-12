@@ -31,10 +31,6 @@
 	<slot />
 	<footer
 		class="foot col-span-5 text-white text-xs text-center self-center p-5"
-		style:position="absolute"
-		style:bottom="0"
-		style:width="100%"
-		style:background="black"
 	>
 		<span>made with ❤️ in hartford, ct</span>
 		<br />
