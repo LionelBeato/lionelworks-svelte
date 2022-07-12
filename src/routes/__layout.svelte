@@ -30,7 +30,7 @@
 	</nav>
 	<slot />
 	<footer
-		class="col-span-5 text-white text-xs text-center self-center p-5"
+		class="foot col-span-5 text-white text-xs text-center self-center p-5"
 		style:position="absolute"
 		style:bottom="0"
 		style:width="100%"
@@ -38,91 +38,9 @@
 	>
 		<span>made with ❤️ in hartford, ct</span>
 		<br />
-		<span>Copyright © Lionel Beato 2020 <b>fd3sd-v1.0.35</b></span>
+		<span>Copyright © Lionel Beato 2022 <b>v2.0.0</b></span>
 	</footer>
 </div>
 
 <style>
-	#portfolio {
-		color: white;
-		padding: 0.3rem;
-		background-color: black;
-		font-weight: bold;
-		font-family: 'IBM Plex Sans', sans-serif;
-		text-transform: uppercase;
-		text-decoration: none;
-		transition: all 0.3s ease-in-out;
-		border: solid 2px black;
-	}
-
-	#portfolio:hover {
-		background-color: yellow;
-		color: black;
-	}
-
-	.head {
-		/* height: 2rem; */
-	}
-
-	.head i,
-	.head #portfolio {
-		margin-right: 0.5rem;
-	}
-
-	.head .un {
-		justify-content: center;
-		margin-right: 1rem;
-		color: black;
-		font-family: 'IBM Plex Sans', sans-serif;
-		text-transform: uppercase;
-		text-decoration: none;
-	}
-
-	.un {
-		position: relative;
-	}
-
-	.un::before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 2px;
-		bottom: -10px;
-		left: 0;
-		background-color: black;
-		visibility: hidden;
-		transform: scaleX(0);
-		transition: all 0.3s ease-in-out;
-	}
-
-	@media only screen and (max-width: 700px) {
-		.head .un {
-			display: none;
-		}
-	}
-
-	@media only screen and (max-width: 375px) {
-		.head i {
-			display: none;
-		}
-	}
-
-	/* .foot {
-		padding-top: 1.5rem;
-		padding-bottom: 1.5rem;
-		align-items: center;
-		text-align: center;
-		position: absolute;
-		font-size: small;
-		clear: both;
-		bottom: 0;
-		height: 3rem;
-		min-width: 100%;
-		background: black;
-	} */
-
-	.foot span {
-		font-family: 'IBM Plex Mono';
-		color: white;
-	}
 </style>

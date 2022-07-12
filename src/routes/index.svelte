@@ -19,8 +19,8 @@
 			</ul>
 			<p>
 				<a href="https://drive.google.com/file/d/1tGTH15tK0C8iEFNbLzz44UTKGur-uiqK/view?usp=sharing"
-					>Here is a link to my CV
-				</a>. Feel free to take a look!
+					>Here is a link to my CV</a
+				>. Feel free to take a look!
 			</p>
 		</article>
 	</div>
@@ -39,8 +39,9 @@
 	}
 
 	p > a {
-		background-color: yellow;
+		background-color: rgb(255, 255, 94);
 		transition: all 250ms;
+		padding: 0.35rem;
 	}
 
 	p > a:hover {
