@@ -82,7 +82,7 @@
 		position: relative;
 	}
 
-	.un:before {
+	.un::before {
 		content: '';
 		position: absolute;
 		width: 100%;
