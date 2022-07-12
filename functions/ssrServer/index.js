@@ -10602,7 +10602,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["93c8cffd4e68e8b6ca34e6ac8d0c6d78.png", "face.png", "favicon.png"]),
   mimeTypes: { ".png": "image/png" },
   _: {
-    entry: { "file": "immutable/start-f8bddc28.js", "imports": ["immutable/start-f8bddc28.js", "immutable/chunks/index-c19c9edb.js"], "stylesheets": [] },
+    entry: { "file": "immutable/start-b80899ab.js", "imports": ["immutable/start-b80899ab.js", "immutable/chunks/index-c19c9edb.js"], "stylesheets": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
