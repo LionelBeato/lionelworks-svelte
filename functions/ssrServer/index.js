@@ -8049,7 +8049,7 @@ var init_layout_svelte = __esm({
     init_shims();
     init_index_b9efae8a();
     _layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"grid grid-cols-5 grid-rows-[1fr_auto_1fr]"}"><nav class="${"head flex items-center p-8 col-span-5"}"><a href="${"/"}"><img class="${"mr-4"}" src="${"../93c8cffd4e68e8b6ca34e6ac8d0c6d78.png"}" alt="${"A stylized L serving as a logo"}" style="${"height: 3rem;"}"></a><a id="${"portfolio"}" href="${"/portfolio"}">portfolio</a>
+      return `<div class="${"grid grid-cols-5 grid-rows-[1fr_auto_1fr] wrapper"}"><nav class="${"head flex items-center p-8 col-span-5"}"><a href="${"/"}"><img class="${"mr-4"}" src="${"../93c8cffd4e68e8b6ca34e6ac8d0c6d78.png"}" alt="${"A stylized L serving as a logo"}" style="${"height: 3rem;"}"></a><a id="${"portfolio"}" href="${"/portfolio"}">portfolio</a>
 		<div id="${"links"}" class="${"ml-auto"}"><a href="${"http://twitter.com/lionelbeato"}"><i class="${"fab fa-twitter fa-lg"}" aria-hidden="${"true"}"></i></a>
 			<a class="${"un"}" href="${"http://twitter.com/lionelbeato"}">Twitter</a>
 			<a href="${"http://github.com/lionelbeato"}"><i class="${"fab fa-github fa-lg"}" aria-hidden="${"true"}"></i></a>
@@ -8078,9 +8078,9 @@ var init__ = __esm({
     init_shims();
     init_layout_svelte();
     index = 0;
-    file2 = "immutable/pages/__layout.svelte-b1ca9937.js";
-    imports = ["immutable/pages/__layout.svelte-b1ca9937.js", "immutable/chunks/index-c19c9edb.js"];
-    stylesheets = ["immutable/assets/pages/__layout.svelte-88eb74fa.css"];
+    file2 = "immutable/pages/__layout.svelte-e4d06c2d.js";
+    imports = ["immutable/pages/__layout.svelte-e4d06c2d.js", "immutable/chunks/index-c19c9edb.js"];
+    stylesheets = ["immutable/assets/pages/__layout.svelte-28d43add.css"];
   }
 });
 
@@ -8237,7 +8237,7 @@ var init_portfolio_svelte = __esm({
     init_shims();
     init_index_b9efae8a();
     Portfolio = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<h1>Here be dragons \u{1F409}</h1>`;
+      return `<div><h1 class="${"container"}">Here be dragons \u{1F409}</h1></div>`;
     });
   }
 });
@@ -8257,8 +8257,8 @@ var init__5 = __esm({
     init_shims();
     init_portfolio_svelte();
     index5 = 4;
-    file6 = "immutable/pages/portfolio.svelte-9e5a3064.js";
-    imports5 = ["immutable/pages/portfolio.svelte-9e5a3064.js", "immutable/chunks/index-c19c9edb.js"];
+    file6 = "immutable/pages/portfolio.svelte-32984960.js";
+    imports5 = ["immutable/pages/portfolio.svelte-32984960.js", "immutable/chunks/index-c19c9edb.js"];
     stylesheets5 = [];
   }
 });
@@ -10590,7 +10590,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["93c8cffd4e68e8b6ca34e6ac8d0c6d78.png", "face.png", "favicon.png"]),
   mimeTypes: { ".png": "image/png" },
   _: {
-    entry: { "file": "immutable/start-7ee4fa62.js", "imports": ["immutable/start-7ee4fa62.js", "immutable/chunks/index-c19c9edb.js"], "stylesheets": [] },
+    entry: { "file": "immutable/start-af97a619.js", "imports": ["immutable/start-af97a619.js", "immutable/chunks/index-c19c9edb.js"], "stylesheets": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

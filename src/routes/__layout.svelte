@@ -3,7 +3,7 @@
 </script>
 
 <div class="grid grid-cols-5 grid-rows-[1fr_auto_1fr] wrapper">
-	<nav class="head flex items-center p-8 col-span-5">
+	<nav class="head flex p-8 col-span-5">
 		<a href="/"
 			><img
 				class="mr-4"
@@ -11,7 +11,7 @@
 				alt="A stylized L serving as a logo"
 				style="height: 3rem;"
 			/></a
-		><a id="portfolio" href="/portfolio">portfolio</a>
+		><a id="portfolio" href="/portfolio" class="h-10">portfolio</a>
 		<div id="links" class="ml-auto">
 			<a href="http://twitter.com/lionelbeato">
 				<i class="fab fa-twitter fa-lg" aria-hidden="true" />
