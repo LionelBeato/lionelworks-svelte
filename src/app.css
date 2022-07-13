@@ -22,7 +22,7 @@
 }
 
 .head {
-	/* height: 2rem; */
+	max-height: 5rem;
 }
 
 .head i,
