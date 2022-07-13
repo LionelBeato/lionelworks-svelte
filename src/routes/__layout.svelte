@@ -2,7 +2,7 @@
 	import '../app.css';
 </script>
 
-<div class="grid grid-cols-5 grid-rows-[1fr_auto_1fr]">
+<div class="grid grid-cols-5 grid-rows-[1fr_auto_1fr] wrapper">
 	<nav class="head flex items-center p-8 col-span-5">
 		<a href="/"
 			><img
@@ -29,9 +29,7 @@
 		</div>
 	</nav>
 	<slot />
-	<footer
-		class="foot col-span-5 text-white text-xs text-center self-center p-5"
-	>
+	<footer class="foot col-span-5 text-white text-xs text-center self-center p-5">
 		<span>made with ❤️ in hartford, ct</span>
 		<br />
 		<span>Copyright © Lionel Beato 2022 <b>v2.0.0</b></span>

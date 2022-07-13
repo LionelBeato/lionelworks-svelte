@@ -77,7 +77,6 @@
 	font-size: small;
 	clear: both;
 	bottom: 0;
-	height: 3rem;
 	min-width: 100%;
 	background: black;
 }
@@ -90,4 +89,9 @@
 .un:hover::before {
 	visibility: visible;
 	transform: scale(1);
+}
+
+.wrapper {
+	position: relative;
+	min-height: 100vh;
 }

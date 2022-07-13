@@ -7939,7 +7939,7 @@ var init_shims = __esm({
   }
 });
 
-// .svelte-kit/output/server/immutable/chunks/index-e66eb7bb.js
+// .svelte-kit/output/server/immutable/chunks/index-b9efae8a.js
 function run(fn) {
   return fn();
 }
@@ -8017,16 +8017,9 @@ function create_ssr_component(fn) {
     $$render
   };
 }
-function style_object_to_string(style_object) {
-  return Object.keys(style_object).filter((key2) => style_object[key2]).map((key2) => `${key2}: ${style_object[key2]};`).join(" ");
-}
-function add_styles(style_object) {
-  const styles = style_object_to_string(style_object);
-  return styles ? ` style="${styles}"` : "";
-}
 var current_component, ATTR_REGEX, CONTENT_REGEX, missing_component, on_destroy;
-var init_index_e66eb7bb = __esm({
-  ".svelte-kit/output/server/immutable/chunks/index-e66eb7bb.js"() {
+var init_index_b9efae8a = __esm({
+  ".svelte-kit/output/server/immutable/chunks/index-b9efae8a.js"() {
     init_shims();
     Promise.resolve();
     ATTR_REGEX = /[&"]/g;
@@ -8054,7 +8047,7 @@ var _layout;
 var init_layout_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/__layout.svelte.js"() {
     init_shims();
-    init_index_e66eb7bb();
+    init_index_b9efae8a();
     _layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div class="${"grid grid-cols-5 grid-rows-[1fr_auto_1fr]"}"><nav class="${"head flex items-center p-8 col-span-5"}"><a href="${"/"}"><img class="${"mr-4"}" src="${"../93c8cffd4e68e8b6ca34e6ac8d0c6d78.png"}" alt="${"A stylized L serving as a logo"}" style="${"height: 3rem;"}"></a><a id="${"portfolio"}" href="${"/portfolio"}">portfolio</a>
 		<div id="${"links"}" class="${"ml-auto"}"><a href="${"http://twitter.com/lionelbeato"}"><i class="${"fab fa-twitter fa-lg"}" aria-hidden="${"true"}"></i></a>
@@ -8062,12 +8055,7 @@ var init_layout_svelte = __esm({
 			<a href="${"http://github.com/lionelbeato"}"><i class="${"fab fa-github fa-lg"}" aria-hidden="${"true"}"></i></a>
 			<a class="${"un"}" href="${"http://github.com/lionelbeato"}">GitHub</a><a href="${"http://linkedin.com/in/lionelbeato"}"><i class="${"fab fa-linkedin fa-lg"}" aria-hidden="${"true"}"></i></a><a class="${"un"}" href="${"http://linkedin.com/in/lionelbeato"}">LinkedIn</a><a href="${"mailto:beato@lionel.works"}"><i class="${"fas fa-at fa-lg"}" aria-hidden="${"true"}"></i></a><a class="${"un"}" href="${"mailto:beato@lionel.works"}">email</a></div></nav>
 	${slots.default ? slots.default({}) : ``}
-	<footer class="${"foot col-span-5 text-white text-xs text-center self-center p-5"}"${add_styles({
-        "position": `absolute`,
-        "bottom": `0`,
-        "width": `100%`,
-        "background": `black`
-      })}><span>made with \u2764\uFE0F in hartford, ct</span>
+	<footer class="${"foot col-span-5 text-white text-xs text-center self-center p-5"}"><span>made with \u2764\uFE0F in hartford, ct</span>
 		<br>
 		<span>Copyright \xA9 Lionel Beato 2022 <b>v2.0.0</b></span></footer>
 </div>`;
@@ -8090,9 +8078,9 @@ var init__ = __esm({
     init_shims();
     init_layout_svelte();
     index = 0;
-    file2 = "immutable/pages/__layout.svelte-15801787.js";
-    imports = ["immutable/pages/__layout.svelte-15801787.js", "immutable/chunks/index-c19c9edb.js"];
-    stylesheets = ["immutable/assets/pages/__layout.svelte-3e097ee9.css"];
+    file2 = "immutable/pages/__layout.svelte-b1ca9937.js";
+    imports = ["immutable/pages/__layout.svelte-b1ca9937.js", "immutable/chunks/index-c19c9edb.js"];
+    stylesheets = ["immutable/assets/pages/__layout.svelte-88eb74fa.css"];
   }
 });
 
@@ -8109,7 +8097,7 @@ var Error2;
 var init_error_svelte = __esm({
   ".svelte-kit/output/server/entries/fallbacks/error.svelte.js"() {
     init_shims();
-    init_index_e66eb7bb();
+    init_index_b9efae8a();
     Error2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { status } = $$props;
       let { error: error2 } = $$props;
@@ -8159,7 +8147,7 @@ var css, Routes;
 var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/index.svelte.js"() {
     init_shims();
-    init_index_e66eb7bb();
+    init_index_b9efae8a();
     css = {
       code: ".title.svelte-187pqhj.svelte-187pqhj{font-size:2rem;text-transform:uppercase;font-family:'IBM Plex Sans';font-weight:900}p.svelte-187pqhj>a.svelte-187pqhj{background-color:rgb(255, 255, 94);transition:all 250ms;padding:0.35rem}p.svelte-187pqhj>a.svelte-187pqhj:hover{background-color:black;color:white}p.svelte-187pqhj.svelte-187pqhj,li.svelte-187pqhj.svelte-187pqhj{font-size:1.2rem}",
       map: null
@@ -8210,7 +8198,7 @@ var Blog;
 var init_blog_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/blog.svelte.js"() {
     init_shims();
-    init_index_e66eb7bb();
+    init_index_b9efae8a();
     Blog = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return ``;
     });
@@ -8247,7 +8235,7 @@ var Portfolio;
 var init_portfolio_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/portfolio.svelte.js"() {
     init_shims();
-    init_index_e66eb7bb();
+    init_index_b9efae8a();
     Portfolio = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<h1>Here be dragons \u{1F409}</h1>`;
     });
@@ -8285,7 +8273,7 @@ init_shims();
 
 // .svelte-kit/output/server/index.js
 init_shims();
-init_index_e66eb7bb();
+init_index_b9efae8a();
 function afterUpdate() {
 }
 var Root = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -10540,7 +10528,7 @@ function set_paths(paths) {
   base = paths.base;
   assets = paths.assets || base;
 }
-var template = ({ head, body: body2, assets: assets2, nonce }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets2 + '/favicon.png" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		<script src="https://kit.fontawesome.com/b2cf9f0da9.js" crossorigin="anonymous"><\/script>\n\n		' + head + "\n	</head>\n	<body>\n		<div>" + body2 + "</div>\n	</body>\n</html>\n";
+var template = ({ head, body: body2, assets: assets2, nonce }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets2 + '/favicon.png" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		    <script src="https://kit.fontawesome.com/b2cf9f0da9.js" crossorigin="anonymous"><\/script>\n		' + head + "\n	</head>\n	<body>\n		<div>" + body2 + "</div>\n	</body>\n</html>\n";
 var read = null;
 set_paths({ "base": "", "assets": "" });
 var Server = class {
@@ -10602,7 +10590,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["93c8cffd4e68e8b6ca34e6ac8d0c6d78.png", "face.png", "favicon.png"]),
   mimeTypes: { ".png": "image/png" },
   _: {
-    entry: { "file": "immutable/start-b80899ab.js", "imports": ["immutable/start-b80899ab.js", "immutable/chunks/index-c19c9edb.js"], "stylesheets": [] },
+    entry: { "file": "immutable/start-7ee4fa62.js", "imports": ["immutable/start-7ee4fa62.js", "immutable/chunks/index-c19c9edb.js"], "stylesheets": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
