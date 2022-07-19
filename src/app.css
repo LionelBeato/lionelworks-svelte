@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
+@layer base {
 	h1 {
 		@apply text-4xl;
 		@apply font-extrabold;
@@ -23,7 +23,19 @@
 	ol > li {
 		list-style-type: stytr;
 	}
-} */
+
+	p > a {
+		background-color: rgb(255, 255, 94);
+		transition: all 250ms;
+		padding: 0.1rem 0.2rem;
+	}
+
+	p > a:hover {
+		background-color: black;
+		color: white;
+		/* padding: 0.35rem; */
+	}
+}
 
 #portfolio {
 	color: white;
