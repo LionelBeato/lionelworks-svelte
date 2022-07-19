@@ -4,6 +4,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @layer base {
+	h1 {
+		@apply text-4xl;
+		@apply font-extrabold;
+		@apply m-2;
+	}
+	h2 {
+		@apply text-xl;
+	}
+	p {
+		@apply text-xl;
+		@apply m-2;
+	}
+	ul > li {
+		list-style-type: disc;
+	}
+	ol > li {
+		list-style-type: stytr;
+	}
+} */
+
 #portfolio {
 	color: white;
 	padding: 0.3rem;
