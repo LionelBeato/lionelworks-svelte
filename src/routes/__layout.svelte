@@ -11,7 +11,9 @@
 				alt="A stylized L serving as a logo"
 				style="height: 3rem;"
 			/></a
-		><a id="portfolio" href="/portfolio" class="h-10">portfolio</a>
+		>
+		<a id="portfolio" href="/portfolio" class="h-10">portfolio</a>
+		<a id="portfolio" href="/blog" class="h-10">blog</a>
 		<div id="links" class="ml-auto">
 			<a href="http://twitter.com/lionelbeato">
 				<i class="fab fa-twitter fa-lg" aria-hidden="true" />
