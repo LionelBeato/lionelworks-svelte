@@ -8080,7 +8080,7 @@ var init__ = __esm({
     index = 0;
     file2 = "immutable/pages/__layout.svelte-dd2ae033.js";
     imports = ["immutable/pages/__layout.svelte-dd2ae033.js", "immutable/chunks/index-c19c9edb.js"];
-    stylesheets = ["immutable/assets/pages/__layout.svelte-188bfe6e.css"];
+    stylesheets = ["immutable/assets/pages/__layout.svelte-9ebe728f.css"];
   }
 });
 
@@ -8200,7 +8200,7 @@ var init_blog_svelte = __esm({
     init_shims();
     init_index_b9efae8a();
     Blog = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return ``;
+      return `<main class="${"col-span-5 grid sm:grid-cols-2 m-auto p-8"}"><h1 class="${"text-5xl text-center"}">Here be dragons blogging \u{1F409}</h1></main>`;
     });
   }
 });
@@ -8220,8 +8220,8 @@ var init__4 = __esm({
     init_shims();
     init_blog_svelte();
     index4 = 2;
-    file5 = "immutable/pages/blog.svelte-9ab86e04.js";
-    imports4 = ["immutable/pages/blog.svelte-9ab86e04.js", "immutable/chunks/index-c19c9edb.js"];
+    file5 = "immutable/pages/blog.svelte-43574796.js";
+    imports4 = ["immutable/pages/blog.svelte-43574796.js", "immutable/chunks/index-c19c9edb.js"];
     stylesheets4 = [];
   }
 });
@@ -8237,7 +8237,7 @@ var init_portfolio_svelte = __esm({
     init_shims();
     init_index_b9efae8a();
     Portfolio = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div><h1 class="${"container"}">Here be dragons \u{1F409}</h1></div>`;
+      return `<main class="${"col-span-5 grid sm:grid-cols-2 m-auto p-8"}"><h1 class="${"text-5xl text-center"}">Here be dragons \u{1F409}</h1></main>`;
     });
   }
 });
@@ -8257,8 +8257,8 @@ var init__5 = __esm({
     init_shims();
     init_portfolio_svelte();
     index5 = 4;
-    file6 = "immutable/pages/portfolio.svelte-32984960.js";
-    imports5 = ["immutable/pages/portfolio.svelte-32984960.js", "immutable/chunks/index-c19c9edb.js"];
+    file6 = "immutable/pages/portfolio.svelte-2b827371.js";
+    imports5 = ["immutable/pages/portfolio.svelte-2b827371.js", "immutable/chunks/index-c19c9edb.js"];
     stylesheets5 = [];
   }
 });
@@ -10590,7 +10590,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["93c8cffd4e68e8b6ca34e6ac8d0c6d78.png", "face.png", "favicon.png"]),
   mimeTypes: { ".png": "image/png" },
   _: {
-    entry: { "file": "immutable/start-a425d6eb.js", "imports": ["immutable/start-a425d6eb.js", "immutable/chunks/index-c19c9edb.js"], "stylesheets": [] },
+    entry: { "file": "immutable/start-ce7c4532.js", "imports": ["immutable/start-ce7c4532.js", "immutable/chunks/index-c19c9edb.js"], "stylesheets": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
