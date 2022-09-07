@@ -15,8 +15,7 @@ jobs:
       - name: Use Node.js 16.x
         uses: actions/setup-node@v3
       # - uses: actions/checkout@v2
-      - run: npm install firebase-tools
-      - run: firebase deploy
+      - run: npm install firebase-tools && firebase deploy
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
