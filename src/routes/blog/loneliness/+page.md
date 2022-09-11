@@ -2,7 +2,7 @@
 title: 'On Loneliness'
 slug: 'loneliness'
 date: '07-19-2022'
-outline: 'I suspect each person believes their loneliness is a special kind of loneliness...'
+outline: "I suspect each person believes their loneliness is a special kind of loneliness..."
 ---
 
 

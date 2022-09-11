@@ -1,7 +1,7 @@
 <script>
-	// export let posts;
 	export let data;
 	console.log(`data exported`, data);
+	import SvelteMarkdown from 'svelte-markdown'
 </script>
 
 <main class="col-span-5 sm:col-start-2 sm:col-end-5 m-auto p-8">
