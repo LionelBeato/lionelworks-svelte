@@ -8,14 +8,14 @@
 	h1 {
 		@apply text-4xl;
 		@apply font-extrabold;
-		@apply m-2;
+		@apply my-5;
 	}
 	h2 {
 		@apply text-xl;
 	}
 	p {
 		@apply text-xl;
-		@apply m-5;
+		@apply my-5;
 	}
 	ul > li {
 		list-style-type: disc;
