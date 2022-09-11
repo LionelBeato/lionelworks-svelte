@@ -2,6 +2,11 @@
 	import '../app.css';
 </script>
 
+<svelte:head>
+	<!-- elements go here -->
+	<title>Wow! Lionel's Very Own Website!</title>
+</svelte:head>
+
 <div class="grid grid-cols-5 grid-rows-[1fr_auto_1fr] wrapper">
 	<nav class="head flex p-8 col-span-5">
 		<a href="/"
