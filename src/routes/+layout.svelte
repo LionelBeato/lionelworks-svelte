@@ -1,5 +1,6 @@
 <script>
 	import '../app.css';
+	const version = VERSION.version;
 </script>
 
 <svelte:head>
@@ -39,7 +40,7 @@
 	<footer class="foot col-span-5 text-white text-xs text-center self-center p-5">
 		<span>made with ❤️ in hartford, ct</span>
 		<br />
-		<span>Copyright © Lionel Beato 2022 <b>v2.0.0</b></span>
+		<span>Copyright © Lionel Beato 2022 <b>{version}</b></span>
 	</footer>
 </div>
 
