@@ -934,11 +934,11 @@ var require_webidl = __commonJS({
     };
     webidl.converters.ByteString = function(V) {
       const x2 = webidl.converters.DOMString(V);
-      for (let index8 = 0; index8 < x2.length; index8++) {
-        const charCode = x2.charCodeAt(index8);
+      for (let index9 = 0; index9 < x2.length; index9++) {
+        const charCode = x2.charCodeAt(index9);
         if (charCode > 255) {
           throw new TypeError(
-            `Cannot convert argument to a ByteString because the character atindex ${index8} has a value of ${charCode} which is greater than 255.`
+            `Cannot convert argument to a ByteString because the character atindex ${index9} has a value of ${charCode} which is greater than 255.`
           );
         }
       }
@@ -1481,8 +1481,8 @@ var require_util2 = __commonJS({
       if (parsedMetadata.length === 0) {
         return true;
       }
-      const metadata3 = parsedMetadata.sort((c, d) => d.algo.localeCompare(c.algo));
-      for (const item of metadata3) {
+      const metadata4 = parsedMetadata.sort((c, d) => d.algo.localeCompare(c.algo));
+      for (const item of metadata4) {
         const algorithm = item.algo;
         const expectedValue = item.hash;
         const actualValue = crypto3.createHash(algorithm).update(bytes).digest("base64");
@@ -1493,11 +1493,11 @@ var require_util2 = __commonJS({
       return false;
     }
     var parseHashWithOptions = /((?<algo>sha256|sha384|sha512)-(?<hash>[A-z0-9+/]{1}.*={1,2}))( +[\x21-\x7e]?)?/i;
-    function parseMetadata(metadata3) {
+    function parseMetadata(metadata4) {
       const result = [];
       let empty = true;
       const supportedHashes = crypto3.getHashes();
-      for (const token of metadata3.split(" ")) {
+      for (const token of metadata4.split(" ")) {
         empty = false;
         const parsedToken = parseHashWithOptions.exec(token);
         if (parsedToken === null || parsedToken.groups === void 0) {
@@ -6152,8 +6152,8 @@ var require_mock_utils = __commonJS({
     function buildHeadersFromArray(headers) {
       const clone2 = headers.slice();
       const entries = [];
-      for (let index8 = 0; index8 < clone2.length; index8 += 2) {
-        entries.push([clone2[index8], clone2[index8 + 1]]);
+      for (let index9 = 0; index9 < clone2.length; index9 += 2) {
+        entries.push([clone2[index9], clone2[index9 + 1]]);
       }
       return Object.fromEntries(entries);
     }
@@ -6235,14 +6235,14 @@ var require_mock_utils = __commonJS({
       return newMockDispatch;
     }
     function deleteMockDispatch(mockDispatches, key2) {
-      const index8 = mockDispatches.findIndex((dispatch) => {
+      const index9 = mockDispatches.findIndex((dispatch) => {
         if (!dispatch.consumed) {
           return false;
         }
         return matchKey(dispatch, key2);
       });
-      if (index8 !== -1) {
-        mockDispatches.splice(index8, 1);
+      if (index9 !== -1) {
+        mockDispatches.splice(index9, 1);
       }
     }
     function buildKey(opts) {
@@ -13822,8 +13822,8 @@ async function toFormData(Body2, ct) {
     entryChunks.push(ui8a);
   };
   const appendFileToFormData = () => {
-    const file8 = new file_default(entryChunks, filename, { type: contentType });
-    formData.append(entryName, file8);
+    const file9 = new file_default(entryChunks, filename, { type: contentType });
+    formData.append(entryName, file9);
   };
   const appendEntryToFormData = () => {
     formData.append(entryName, entryValue);
@@ -13932,7 +13932,7 @@ var init_multipart_parser = __esm({
         let i2 = 0;
         const length_ = data.length;
         let previousIndex = this.index;
-        let { lookbehind, boundary, boundaryChars, index: index8, state, flags } = this;
+        let { lookbehind, boundary, boundaryChars, index: index9, state, flags } = this;
         const boundaryLength = this.boundary.length;
         const boundaryEnd = boundaryLength - 1;
         const bufferLength = data.length;
@@ -13966,20 +13966,20 @@ var init_multipart_parser = __esm({
           c = data[i2];
           switch (state) {
             case S.START_BOUNDARY:
-              if (index8 === boundary.length - 2) {
+              if (index9 === boundary.length - 2) {
                 if (c === HYPHEN) {
                   flags |= F.LAST_BOUNDARY;
                 } else if (c !== CR) {
                   return;
                 }
-                index8++;
+                index9++;
                 break;
-              } else if (index8 - 1 === boundary.length - 2) {
+              } else if (index9 - 1 === boundary.length - 2) {
                 if (flags & F.LAST_BOUNDARY && c === HYPHEN) {
                   state = S.END;
                   flags = 0;
                 } else if (!(flags & F.LAST_BOUNDARY) && c === LF) {
-                  index8 = 0;
+                  index9 = 0;
                   callback("onPartBegin");
                   state = S.HEADER_FIELD_START;
                 } else {
@@ -13987,29 +13987,29 @@ var init_multipart_parser = __esm({
                 }
                 break;
               }
-              if (c !== boundary[index8 + 2]) {
-                index8 = -2;
+              if (c !== boundary[index9 + 2]) {
+                index9 = -2;
               }
-              if (c === boundary[index8 + 2]) {
-                index8++;
+              if (c === boundary[index9 + 2]) {
+                index9++;
               }
               break;
             case S.HEADER_FIELD_START:
               state = S.HEADER_FIELD;
               mark("onHeaderField");
-              index8 = 0;
+              index9 = 0;
             case S.HEADER_FIELD:
               if (c === CR) {
                 clear("onHeaderField");
                 state = S.HEADERS_ALMOST_DONE;
                 break;
               }
-              index8++;
+              index9++;
               if (c === HYPHEN) {
                 break;
               }
               if (c === COLON) {
-                if (index8 === 1) {
+                if (index9 === 1) {
                   return;
                 }
                 dataCallback("onHeaderField", true);
@@ -14051,8 +14051,8 @@ var init_multipart_parser = __esm({
               state = S.PART_DATA;
               mark("onPartData");
             case S.PART_DATA:
-              previousIndex = index8;
-              if (index8 === 0) {
+              previousIndex = index9;
+              if (index9 === 0) {
                 i2 += boundaryEnd;
                 while (i2 < bufferLength && !(data[i2] in boundaryChars)) {
                   i2 += boundaryLength;
@@ -14060,27 +14060,27 @@ var init_multipart_parser = __esm({
                 i2 -= boundaryEnd;
                 c = data[i2];
               }
-              if (index8 < boundary.length) {
-                if (boundary[index8] === c) {
-                  if (index8 === 0) {
+              if (index9 < boundary.length) {
+                if (boundary[index9] === c) {
+                  if (index9 === 0) {
                     dataCallback("onPartData", true);
                   }
-                  index8++;
+                  index9++;
                 } else {
-                  index8 = 0;
+                  index9 = 0;
                 }
-              } else if (index8 === boundary.length) {
-                index8++;
+              } else if (index9 === boundary.length) {
+                index9++;
                 if (c === CR) {
                   flags |= F.PART_BOUNDARY;
                 } else if (c === HYPHEN) {
                   flags |= F.LAST_BOUNDARY;
                 } else {
-                  index8 = 0;
+                  index9 = 0;
                 }
-              } else if (index8 - 1 === boundary.length) {
+              } else if (index9 - 1 === boundary.length) {
                 if (flags & F.PART_BOUNDARY) {
-                  index8 = 0;
+                  index9 = 0;
                   if (c === LF) {
                     flags &= ~F.PART_BOUNDARY;
                     callback("onPartEnd");
@@ -14094,14 +14094,14 @@ var init_multipart_parser = __esm({
                     state = S.END;
                     flags = 0;
                   } else {
-                    index8 = 0;
+                    index9 = 0;
                   }
                 } else {
-                  index8 = 0;
+                  index9 = 0;
                 }
               }
-              if (index8 > 0) {
-                lookbehind[index8 - 1] = c;
+              if (index9 > 0) {
+                lookbehind[index9 - 1] = c;
               } else if (previousIndex > 0) {
                 const _lookbehind = new Uint8Array(lookbehind.buffer, lookbehind.byteOffset, lookbehind.byteLength);
                 callback("onPartData", 0, previousIndex, _lookbehind);
@@ -14119,7 +14119,7 @@ var init_multipart_parser = __esm({
         dataCallback("onHeaderField");
         dataCallback("onHeaderValue");
         dataCallback("onPartData");
-        this.index = index8;
+        this.index = index9;
         this.state = state;
         this.flags = flags;
       }
@@ -14749,8 +14749,8 @@ function subscribe(store, ...callbacks) {
   const unsub = store.subscribe(...callbacks);
   return unsub.unsubscribe ? () => unsub.unsubscribe() : unsub;
 }
-function set_current_component(component8) {
-  current_component = component8;
+function set_current_component(component9) {
+  current_component = component9;
 }
 function get_current_component() {
   if (!current_component)
@@ -14785,13 +14785,13 @@ function each(items, fn) {
   }
   return str;
 }
-function validate_component(component8, name) {
-  if (!component8 || !component8.$$render) {
+function validate_component(component9, name) {
+  if (!component9 || !component9.$$render) {
     if (name === "svelte:component")
       name += " this={...}";
     throw new Error(`<${name}> is not a valid SSR component. You may need to review your build config to ensure that dependencies are compiled, rather than imported as pre-compiled modules`);
   }
-  return component8;
+  return component9;
 }
 function create_ssr_component(fn) {
   function $$render(result, props, bindings, slots, context) {
@@ -14856,20 +14856,20 @@ var require_cookie = __commonJS({
       var obj = {};
       var opt = options2 || {};
       var dec = opt.decode || decode;
-      var index8 = 0;
-      while (index8 < str.length) {
-        var eqIdx = str.indexOf("=", index8);
+      var index9 = 0;
+      while (index9 < str.length) {
+        var eqIdx = str.indexOf("=", index9);
         if (eqIdx === -1) {
           break;
         }
-        var endIdx = str.indexOf(";", index8);
+        var endIdx = str.indexOf(";", index9);
         if (endIdx === -1) {
           endIdx = str.length;
         } else if (endIdx < eqIdx) {
-          index8 = str.lastIndexOf(";", eqIdx - 1) + 1;
+          index9 = str.lastIndexOf(";", eqIdx - 1) + 1;
           continue;
         }
-        var key2 = str.slice(index8, eqIdx).trim();
+        var key2 = str.slice(index9, eqIdx).trim();
         if (void 0 === obj[key2]) {
           var val = str.slice(eqIdx + 1, endIdx).trim();
           if (val.charCodeAt(0) === 34) {
@@ -14877,7 +14877,7 @@ var require_cookie = __commonJS({
           }
           obj[key2] = tryDecode(val, dec);
         }
-        index8 = endIdx + 1;
+        index9 = endIdx + 1;
       }
       return obj;
     }
@@ -15167,7 +15167,10 @@ var init_layout_svelte = __esm({
     init_shims();
     init_chunks();
     Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"grid grid-cols-5 grid-rows-[1fr_auto_1fr] wrapper"}"><nav class="${"head flex p-8 col-span-5"}"><a href="${"/"}"><img class="${"mr-4"}" src="${"../93c8cffd4e68e8b6ca34e6ac8d0c6d78.png"}" alt="${"A stylized L serving as a logo"}" style="${"height: 3rem;"}"></a>
+      const version = { "name": "lionelworks", "version": "2.0.12", "scripts": { "dev": "vite dev", "build": "vite build", "package": "vite package", "preview": "vite preview", "test": "playwright test", "check": "svelte-check --tsconfig ./tsconfig.json", "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch", "lint": "prettier --check --plugin-search-dir=. . && eslint .", "format": "prettier --write --plugin-search-dir=. ." }, "devDependencies": { "@playwright/test": "^1.25.0", "@sveltejs/adapter-auto": "next", "@sveltejs/kit": "next", "@types/cookie": "^0.5.1", "@typescript-eslint/eslint-plugin": "^5.27.0", "@typescript-eslint/parser": "^5.27.0", "autoprefixer": "^10.4.7", "eslint": "^8.16.0", "eslint-config-prettier": "^8.3.0", "eslint-plugin-svelte3": "^4.0.0", "mdsvex": "^0.10.6", "postcss": "^8.4.14", "prettier": "^2.6.2", "prettier-plugin-svelte": "^2.7.0", "svelte": "^3.46.0", "svelte-check": "^2.7.1", "svelte-preprocess": "^4.10.6", "tailwindcss": "^3.1.4", "tslib": "^2.3.1", "typescript": "^4.7.2", "vite": "^3.1.0" }, "type": "module", "dependencies": { "firebase": "^9.9.0", "svelte-adapter-firebase": "^0.14.1", "svelte-markdown": "^0.2.3", "vite": "^3.1.0" } }.version;
+      return `${$$result.head += `${$$result.title = `<title>Wow! Lionel&#39;s Very Own Website!</title>`, ""}`, ""}
+
+<div class="${"grid grid-cols-5 grid-rows-[1fr_auto_1fr] wrapper"}"><nav class="${"head flex p-8 col-span-5"}"><a href="${"/"}"><img class="${"mr-4"}" src="${"../93c8cffd4e68e8b6ca34e6ac8d0c6d78.png"}" alt="${"A stylized L serving as a logo"}" style="${"height: 3rem;"}"></a>
 		<a id="${"portfolio"}" href="${"/portfolio"}" class="${"h-10"}">portfolio</a>
 		<a id="${"portfolio"}" href="${"/blog"}" class="${"h-10"}">blog</a>
 		<div id="${"links"}" class="${"ml-auto"}"><a href="${"http://twitter.com/lionelbeato"}"><i class="${"fab fa-twitter fa-lg"}" aria-hidden="${"true"}"></i></a>
@@ -15177,7 +15180,7 @@ var init_layout_svelte = __esm({
 	${slots.default ? slots.default({}) : ``}
 	<footer class="${"foot col-span-5 text-white text-xs text-center self-center p-5"}"><span>made with \u2764\uFE0F in hartford, ct</span>
 		<br>
-		<span>Copyright \xA9 Lionel Beato 2022 <b>v2.0.0</b></span></footer>
+		<span>Copyright \xA9 Lionel Beato 2022 <b>${escape(version)}</b></span></footer>
 </div>`;
     });
   }
@@ -15198,8 +15201,8 @@ var init__ = __esm({
     init_shims();
     index = 0;
     component = async () => (await Promise.resolve().then(() => (init_layout_svelte(), layout_svelte_exports))).default;
-    file = "_app/immutable/components/pages/_layout.svelte-7cae2ccb.js";
-    imports = ["_app/immutable/components/pages/_layout.svelte-7cae2ccb.js", "_app/immutable/chunks/index-bd7c318a.js"];
+    file = "_app/immutable/components/pages/_layout.svelte-16473557.js";
+    imports = ["_app/immutable/components/pages/_layout.svelte-16473557.js", "_app/immutable/chunks/index-dcb258cc.js"];
     stylesheets = ["_app/immutable/assets/_layout-5a7537a1.css"];
   }
 });
@@ -15287,8 +15290,8 @@ var init__2 = __esm({
     init_shims();
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    file2 = "_app/immutable/components/error.svelte-a00ea4f0.js";
-    imports2 = ["_app/immutable/components/error.svelte-a00ea4f0.js", "_app/immutable/chunks/index-bd7c318a.js", "_app/immutable/chunks/singletons-fafb09e0.js"];
+    file2 = "_app/immutable/components/error.svelte-734621ba.js";
+    imports2 = ["_app/immutable/components/error.svelte-734621ba.js", "_app/immutable/chunks/index-dcb258cc.js", "_app/immutable/chunks/singletons-423070a1.js"];
     stylesheets2 = [];
   }
 });
@@ -15338,8 +15341,8 @@ var init__3 = __esm({
     init_shims();
     index3 = 2;
     component3 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
-    file3 = "_app/immutable/components/pages/_page.svelte-157c825a.js";
-    imports3 = ["_app/immutable/components/pages/_page.svelte-157c825a.js", "_app/immutable/chunks/index-bd7c318a.js"];
+    file3 = "_app/immutable/components/pages/_page.svelte-9f51a36d.js";
+    imports3 = ["_app/immutable/components/pages/_page.svelte-9f51a36d.js", "_app/immutable/chunks/index-dcb258cc.js"];
     stylesheets3 = ["_app/immutable/assets/_page-a87a3290.css"];
   }
 });
@@ -17423,13 +17426,46 @@ var init_page_md2 = __esm({
       "title": "On Loneliness",
       "slug": "loneliness",
       "date": "07-19-2022",
-      "outline": "..."
+      "outline": "I suspect each person believes their loneliness is a special kind of loneliness..."
     };
     Page3 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `${validate_component(Post, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata2), {}, {
         default: () => {
-          return `<p>I suspect each person believes their loneliness is a special kind of loneliness\u2026 The kind of mushy dejectedness that leaves your emotions out of focus, indistinct. I suspect this because I know this to be true for myself. My emotions are valid and true to be sure, but they need not be unique. Or at least, that\u2019s the idea.</p>
-<p>The fact remains that this ache I feel is something I\u2019ve been tasked with shouldering, and despite decades of feeling this way, I simply never get used to it. It\u2019s a raw, pink feeling and it simply refuses to callous. </p>`;
+          return `<p>I suspect each person believes their loneliness is a special kind of loneliness\u2026 The kind of mushy dejectedness that leaves your emotions out of focus, indistinct. I suspect this because I know this to be true for myself. My emotions are valid and true to be sure, but they need not be unique. Or at least, that\u2019s the idea.</p>`;
+        }
+      })}`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/blog/stargazing/_page.md.js
+var page_md_exports3 = {};
+__export(page_md_exports3, {
+  default: () => Page4,
+  metadata: () => metadata3
+});
+var metadata3, Page4;
+var init_page_md3 = __esm({
+  ".svelte-kit/output/server/entries/pages/blog/stargazing/_page.md.js"() {
+    init_shims();
+    init_chunks();
+    init_post();
+    metadata3 = {
+      "title": "Stargazing",
+      "slug": "stargazing",
+      "date": "09-12-2022",
+      "outline": "A boy and his bird"
+    };
+    Page4 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `${validate_component(Post, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata3), {}, {
+        default: () => {
+          return `<p>Today I want to talk about a bird. Specifically, a dove\u2013the mourning dove. Not morning like the time of day, mourning as in \u201CI feel sad for a great loss I am in mourning.\u201D It\u2019s a powerful moniker to be sure but I feel it somewhat robs the sad little bird of some nuance. But it\u2019s not called that for no reason.</p>
+<p>You see, the mourning dove is a peculiar creature but not something I was very aware of. In fact, they\u2019re quite common. US Fish &amp; Wildlife reported this year that there are at least 165 million individuals in the country. Thing is, they\u2019re also a popular game animal, with 9 million harvested last year alone. The mourning dove is known for its soft, sorrowful cry. An expression of grief\u2013a mourning. What exactly the mourning doves mourns is uncertain but I think I may have an idea.</p>
+<p>Dead kin aside, the mourning dove as a symbol means different things to different people. Love, hope, peace, what have you. In myth, it\u2019s said to have been covered by the ashes of a dead lover, giving it distinctive chalky grey plumage. Thus, the mourning dove shares its pain not only through its call but its appearance. Personally, I can\u2019t quite define what the dove means to me but not for a lack of trying. I was first introduced to the bird by my mother. She had one as a pet but it was sickly and would struggle to hold up his head. \u201CYou take it. Go ahead and make it better,\u201D she said. She dropped off the bird at my apartment, hoping for the best.</p>
+<p>Stargazing. That was the name of my new feathered friend\u2019s disorder. It\u2019s called stargazing because birds with it seem to look up towards the sky, as if they\u2019re admiring the stars. A poetic ailment for a poetic creature. I was in a terrible place when this bird came into my life. Lonely and heartbroken. Through it all I would try my best to care for the dove. I couldn\u2019t let it fly, because as soon as it took off it would hit a wall head first and plomp to the ground. So I made sure it had an easy going existence with occassional handling with hopes that it could acclimate to people. Whenever he\u2019d perch on my finger I had to hold his belly to keep him up. Somehow I felt he was at peace.</p>
+<p>The one thing I never got used to was the crying. Mourning doves don\u2019t have a set time when they coo. No, they make these sad, pitiful noises at all hours. So every morning I\u2019d wake up to this deep bellowing lament of a cry. Every night I\u2019d lay my head down to the pitiful murmurs of a tired creature. Vividly, I remember coming home from one of the worst experiences of my life\u2013a story for another day\u2013and I was exhausted and miseriable and sad. I collapsed on my floor and balled up. I couldn\u2019t see anything, I couldn\u2019t feel anything, I couldn\u2019t speak. But I could hear. And what I heard was that cry. At my lowest point in life, it didn\u2019t feel like mourning, it felt like a mockery.</p>
+<p>But no, the mourning dove was simply doing what a mourning dove does and if anything he was cooing at the sight of me, happy to see me safe and sound. In my mind, I took that sad cry of his as an affirmation. \u201CThings are bad now, but they can always be better. This too shall pass.\u201D I would use it as my mantra. Human language couldn\u2019t quite capture what I needed to hear in that time of my life but somehow this tiny little bird had all the wisdom in the world. In an odd sort of way, I wouldn\u2019t be here without his cooing.</p>
+<p>Eventually, I had to let go of him but there are mourning doves where I live now and at dawn I can hear them play that old familiar tune. <em>Coo coo</em>. A gentleness washes over me in those moments and all I can do is appreciate their encouragement.</p>`;
         }
       })}`;
     });
@@ -17451,10 +17487,10 @@ var posts, body;
 var init_page_ts = __esm({
   ".svelte-kit/output/server/entries/pages/blog/_page.ts.js"() {
     init_shims();
-    posts = /* @__PURE__ */ Object.assign({ "./first-post/+page.md": () => Promise.resolve().then(() => (init_page_md(), page_md_exports)), "./loneliness/+page.md": () => Promise.resolve().then(() => (init_page_md2(), page_md_exports2)) });
+    posts = /* @__PURE__ */ Object.assign({ "./first-post/+page.md": () => Promise.resolve().then(() => (init_page_md(), page_md_exports)), "./loneliness/+page.md": () => Promise.resolve().then(() => (init_page_md2(), page_md_exports2)), "./stargazing/+page.md": () => Promise.resolve().then(() => (init_page_md3(), page_md_exports3)) });
     body = [];
     for (const path in posts) {
-      body.push(posts[path]().then(({ metadata: metadata3 }) => metadata3));
+      body.push(posts[path]().then(({ metadata: metadata4 }) => metadata4));
     }
     console.log(body);
   }
@@ -17463,14 +17499,15 @@ var init_page_ts = __esm({
 // .svelte-kit/output/server/entries/pages/blog/_page.svelte.js
 var page_svelte_exports2 = {};
 __export(page_svelte_exports2, {
-  default: () => Page4
+  default: () => Page5
 });
-var Page4;
+var Page5;
 var init_page_svelte2 = __esm({
   ".svelte-kit/output/server/entries/pages/blog/_page.svelte.js"() {
     init_shims();
     init_chunks();
-    Page4 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+    init_marked_esm();
+    Page5 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { data } = $$props;
       console.log(`data exported`, data);
       if ($$props.data === void 0 && $$bindings.data && data !== void 0)
@@ -17502,8 +17539,8 @@ var init__4 = __esm({
     init_page_ts();
     index4 = 3;
     component4 = async () => (await Promise.resolve().then(() => (init_page_svelte2(), page_svelte_exports2))).default;
-    file4 = "_app/immutable/components/pages/blog/_page.svelte-41093ce9.js";
-    imports4 = ["_app/immutable/components/pages/blog/_page.svelte-41093ce9.js", "_app/immutable/chunks/index-bd7c318a.js", "_app/immutable/modules/pages/blog/_page.ts-79e15fa4.js", "_app/immutable/chunks/preload-helper-aa6bc0ce.js", "_app/immutable/chunks/_page-6f64d7f0.js"];
+    file4 = "_app/immutable/components/pages/blog/_page.svelte-6b8e624f.js";
+    imports4 = ["_app/immutable/components/pages/blog/_page.svelte-6b8e624f.js", "_app/immutable/chunks/index-dcb258cc.js", "_app/immutable/chunks/marked.esm-54748e82.js", "_app/immutable/modules/pages/blog/_page.ts-968936b0.js", "_app/immutable/chunks/preload-helper-aa6bc0ce.js", "_app/immutable/chunks/_page-00e8b21f.js"];
     stylesheets4 = [];
   }
 });
@@ -17523,8 +17560,8 @@ var init__5 = __esm({
     init_shims();
     index5 = 4;
     component5 = async () => (await Promise.resolve().then(() => (init_page_md(), page_md_exports))).default;
-    file5 = "_app/immutable/components/pages/blog/first-post/_page.md-c76ac3a7.js";
-    imports5 = ["_app/immutable/components/pages/blog/first-post/_page.md-c76ac3a7.js", "_app/immutable/chunks/index-bd7c318a.js", "_app/immutable/chunks/post-e5d78565.js"];
+    file5 = "_app/immutable/components/pages/blog/first-post/_page.md-919f8be9.js";
+    imports5 = ["_app/immutable/components/pages/blog/first-post/_page.md-919f8be9.js", "_app/immutable/chunks/index-dcb258cc.js", "_app/immutable/chunks/post-703f9fcc.js", "_app/immutable/chunks/marked.esm-54748e82.js"];
     stylesheets5 = [];
   }
 });
@@ -17544,25 +17581,9 @@ var init__6 = __esm({
     init_shims();
     index6 = 5;
     component6 = async () => (await Promise.resolve().then(() => (init_page_md2(), page_md_exports2))).default;
-    file6 = "_app/immutable/components/pages/blog/loneliness/_page.md-b16cfdbe.js";
-    imports6 = ["_app/immutable/components/pages/blog/loneliness/_page.md-b16cfdbe.js", "_app/immutable/chunks/index-bd7c318a.js", "_app/immutable/chunks/post-e5d78565.js"];
+    file6 = "_app/immutable/components/pages/blog/loneliness/_page.md-9ddaa536.js";
+    imports6 = ["_app/immutable/components/pages/blog/loneliness/_page.md-9ddaa536.js", "_app/immutable/chunks/index-dcb258cc.js", "_app/immutable/chunks/post-703f9fcc.js", "_app/immutable/chunks/marked.esm-54748e82.js"];
     stylesheets6 = [];
-  }
-});
-
-// .svelte-kit/output/server/entries/pages/portfolio/_page.svelte.js
-var page_svelte_exports3 = {};
-__export(page_svelte_exports3, {
-  default: () => Page5
-});
-var Page5;
-var init_page_svelte3 = __esm({
-  ".svelte-kit/output/server/entries/pages/portfolio/_page.svelte.js"() {
-    init_shims();
-    init_chunks();
-    Page5 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<main class="${"col-span-5 grid sm:grid-cols-2 m-auto p-8"}"><h1 class="${"text-5xl text-center"}">Here be dragons \u{1F409}</h1></main>`;
-    });
   }
 });
 
@@ -17580,10 +17601,47 @@ var init__7 = __esm({
   ".svelte-kit/output/server/nodes/6.js"() {
     init_shims();
     index7 = 6;
-    component7 = async () => (await Promise.resolve().then(() => (init_page_svelte3(), page_svelte_exports3))).default;
-    file7 = "_app/immutable/components/pages/portfolio/_page.svelte-28db6638.js";
-    imports7 = ["_app/immutable/components/pages/portfolio/_page.svelte-28db6638.js", "_app/immutable/chunks/index-bd7c318a.js"];
+    component7 = async () => (await Promise.resolve().then(() => (init_page_md3(), page_md_exports3))).default;
+    file7 = "_app/immutable/components/pages/blog/stargazing/_page.md-52f2b4a9.js";
+    imports7 = ["_app/immutable/components/pages/blog/stargazing/_page.md-52f2b4a9.js", "_app/immutable/chunks/index-dcb258cc.js", "_app/immutable/chunks/post-703f9fcc.js", "_app/immutable/chunks/marked.esm-54748e82.js"];
     stylesheets7 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/portfolio/_page.svelte.js
+var page_svelte_exports3 = {};
+__export(page_svelte_exports3, {
+  default: () => Page6
+});
+var Page6;
+var init_page_svelte3 = __esm({
+  ".svelte-kit/output/server/entries/pages/portfolio/_page.svelte.js"() {
+    init_shims();
+    init_chunks();
+    Page6 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<main class="${"col-span-5 grid sm:grid-cols-2 m-auto p-8"}"><h1 class="${"text-5xl text-center"}">Here be dragons \u{1F409}</h1></main>`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/7.js
+var __exports8 = {};
+__export(__exports8, {
+  component: () => component8,
+  file: () => file8,
+  imports: () => imports8,
+  index: () => index8,
+  stylesheets: () => stylesheets8
+});
+var index8, component8, file8, imports8, stylesheets8;
+var init__8 = __esm({
+  ".svelte-kit/output/server/nodes/7.js"() {
+    init_shims();
+    index8 = 7;
+    component8 = async () => (await Promise.resolve().then(() => (init_page_svelte3(), page_svelte_exports3))).default;
+    file8 = "_app/immutable/components/pages/portfolio/_page.svelte-de4b369c.js";
+    imports8 = ["_app/immutable/components/pages/portfolio/_page.svelte-de4b369c.js", "_app/immutable/chunks/index-dcb258cc.js"];
+    stylesheets8 = [];
   }
 });
 
@@ -18392,10 +18450,10 @@ function create_fetch({ event, options: options2, state, route, prerender_defaul
         const is_asset = options2.manifest.assets.has(filename);
         const is_asset_html = options2.manifest.assets.has(filename_html);
         if (is_asset || is_asset_html) {
-          const file8 = is_asset ? filename : filename_html;
+          const file9 = is_asset ? filename : filename_html;
           if (options2.read) {
             const type = is_asset ? options2.manifest.mimeTypes[filename.slice(filename.lastIndexOf("."))] : "text/html";
-            return new Response(options2.read(file8), {
+            return new Response(options2.read(file9), {
               headers: type ? { "content-type": type } : {}
             });
           }
@@ -19052,7 +19110,7 @@ async function render_response({
     }
   }
   const { entry } = options2.manifest._;
-  const stylesheets8 = new Set(entry.stylesheets);
+  const stylesheets9 = new Set(entry.stylesheets);
   const modulepreloads = new Set(entry.imports);
   const link_header_preloads = /* @__PURE__ */ new Set();
   const inline_styles = /* @__PURE__ */ new Map();
@@ -19097,7 +19155,7 @@ async function render_response({
         node.imports.forEach((url) => modulepreloads.add(url));
       }
       if (node.stylesheets) {
-        node.stylesheets.forEach((url) => stylesheets8.add(url));
+        node.stylesheets.forEach((url) => stylesheets9.add(url));
       }
       if (node.inline_styles) {
         Object.entries(await node.inline_styles()).forEach(([k, v]) => inline_styles.set(k, v));
@@ -19172,7 +19230,7 @@ async function render_response({
     head += `
 	<style${attributes.join("")}>${content}</style>`;
   }
-  for (const dep of stylesheets8) {
+  for (const dep of stylesheets9) {
     const path = prefixed(dep);
     const attributes = [];
     if (csp.style_needs_nonce) {
@@ -19479,8 +19537,8 @@ async function render_page(event, route, page2, options2, state, resolve_opts) {
           const error2 = handle_error_and_jsonify(event, options2, err);
           while (i2--) {
             if (page2.errors[i2]) {
-              const index8 = page2.errors[i2];
-              const node2 = await options2.manifest._.nodes[index8]();
+              const index9 = page2.errors[i2];
+              const node2 = await options2.manifest._.nodes[index9]();
               let j = i2;
               while (!branch[j])
                 j -= 1;
@@ -20022,7 +20080,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["93c8cffd4e68e8b6ca34e6ac8d0c6d78.png", "face.png", "favicon.png"]),
   mimeTypes: { ".png": "image/png" },
   _: {
-    entry: { "file": "_app/immutable/start-315f6f76.js", "imports": ["_app/immutable/start-315f6f76.js", "_app/immutable/chunks/preload-helper-aa6bc0ce.js", "_app/immutable/chunks/index-bd7c318a.js", "_app/immutable/chunks/singletons-fafb09e0.js"], "stylesheets": [] },
+    entry: { "file": "_app/immutable/start-85f91c4b.js", "imports": ["_app/immutable/start-85f91c4b.js", "_app/immutable/chunks/preload-helper-aa6bc0ce.js", "_app/immutable/chunks/index-dcb258cc.js", "_app/immutable/chunks/singletons-423070a1.js"], "stylesheets": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
@@ -20030,7 +20088,8 @@ var manifest = {
       () => Promise.resolve().then(() => (init__4(), __exports4)),
       () => Promise.resolve().then(() => (init__5(), __exports5)),
       () => Promise.resolve().then(() => (init__6(), __exports6)),
-      () => Promise.resolve().then(() => (init__7(), __exports7))
+      () => Promise.resolve().then(() => (init__7(), __exports7)),
+      () => Promise.resolve().then(() => (init__8(), __exports8))
     ],
     routes: [
       {
@@ -20054,7 +20113,7 @@ var manifest = {
         pattern: /^\/portfolio\/?$/,
         names: [],
         types: [],
-        page: { layouts: [0], errors: [1], leaf: 6 },
+        page: { layouts: [0], errors: [1], leaf: 7 },
         endpoint: null
       },
       {
@@ -20071,6 +20130,14 @@ var manifest = {
         names: [],
         types: [],
         page: { layouts: [0], errors: [1], leaf: 5 },
+        endpoint: null
+      },
+      {
+        id: "blog/stargazing",
+        pattern: /^\/blog\/stargazing\/?$/,
+        names: [],
+        types: [],
+        page: { layouts: [0], errors: [1], leaf: 6 },
         endpoint: null
       }
     ],

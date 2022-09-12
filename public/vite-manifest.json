@@ -1,12 +1,12 @@
 {
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-315f6f76.js",
+    "file": "_app/immutable/start-85f91c4b.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_preload-helper-aa6bc0ce.js",
-      "_index-bd7c318a.js",
-      "_singletons-fafb09e0.js"
+      "_index-dcb258cc.js",
+      "_singletons-423070a1.js"
     ],
     "dynamicImports": [
       ".svelte-kit/generated/nodes/0.js",
@@ -15,115 +15,132 @@
       ".svelte-kit/generated/nodes/3.js",
       ".svelte-kit/generated/nodes/4.js",
       ".svelte-kit/generated/nodes/5.js",
-      ".svelte-kit/generated/nodes/6.js"
+      ".svelte-kit/generated/nodes/6.js",
+      ".svelte-kit/generated/nodes/7.js"
     ]
   },
   "src/routes/+layout.svelte": {
-    "file": "_app/immutable/components/pages/_layout.svelte-7cae2ccb.js",
+    "file": "_app/immutable/components/pages/_layout.svelte-16473557.js",
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
-      "_index-bd7c318a.js"
+      "_index-dcb258cc.js"
     ],
     "css": [
       "_app/immutable/assets/_layout-5a7537a1.css"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-a00ea4f0.js",
+    "file": "_app/immutable/components/error.svelte-734621ba.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
-      "_index-bd7c318a.js",
-      "_singletons-fafb09e0.js"
+      "_index-dcb258cc.js",
+      "_singletons-423070a1.js"
     ]
   },
   "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-157c825a.js",
+    "file": "_app/immutable/components/pages/_page.svelte-9f51a36d.js",
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index-bd7c318a.js"
+      "_index-dcb258cc.js"
     ],
     "css": [
       "_app/immutable/assets/_page-a87a3290.css"
     ]
   },
   "src/routes/blog/+page.svelte": {
-    "file": "_app/immutable/components/pages/blog/_page.svelte-41093ce9.js",
+    "file": "_app/immutable/components/pages/blog/_page.svelte-6b8e624f.js",
     "src": "src/routes/blog/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index-bd7c318a.js"
+      "_index-dcb258cc.js",
+      "_marked.esm-54748e82.js"
     ]
   },
   "src/routes/blog/first-post/+page.md": {
-    "file": "_app/immutable/components/pages/blog/first-post/_page.md-c76ac3a7.js",
+    "file": "_app/immutable/components/pages/blog/first-post/_page.md-919f8be9.js",
     "src": "src/routes/blog/first-post/+page.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-bd7c318a.js",
-      "_post-e5d78565.js"
+      "_index-dcb258cc.js",
+      "_post-703f9fcc.js"
     ]
   },
   "src/routes/blog/loneliness/+page.md": {
-    "file": "_app/immutable/components/pages/blog/loneliness/_page.md-b16cfdbe.js",
+    "file": "_app/immutable/components/pages/blog/loneliness/_page.md-9ddaa536.js",
     "src": "src/routes/blog/loneliness/+page.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-bd7c318a.js",
-      "_post-e5d78565.js"
+      "_index-dcb258cc.js",
+      "_post-703f9fcc.js"
+    ]
+  },
+  "src/routes/blog/stargazing/+page.md": {
+    "file": "_app/immutable/components/pages/blog/stargazing/_page.md-52f2b4a9.js",
+    "src": "src/routes/blog/stargazing/+page.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-dcb258cc.js",
+      "_post-703f9fcc.js"
     ]
   },
   "src/routes/portfolio/+page.svelte": {
-    "file": "_app/immutable/components/pages/portfolio/_page.svelte-28db6638.js",
+    "file": "_app/immutable/components/pages/portfolio/_page.svelte-de4b369c.js",
     "src": "src/routes/portfolio/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index-bd7c318a.js"
+      "_index-dcb258cc.js"
     ]
   },
   "src/routes/blog/+page.ts": {
-    "file": "_app/immutable/modules/pages/blog/_page.ts-79e15fa4.js",
+    "file": "_app/immutable/modules/pages/blog/_page.ts-968936b0.js",
     "src": "src/routes/blog/+page.ts",
     "isEntry": true,
     "imports": [
       "_preload-helper-aa6bc0ce.js",
-      "__page-6f64d7f0.js"
+      "__page-00e8b21f.js"
     ]
   },
-  "_singletons-fafb09e0.js": {
-    "file": "_app/immutable/chunks/singletons-fafb09e0.js",
+  "_singletons-423070a1.js": {
+    "file": "_app/immutable/chunks/singletons-423070a1.js",
     "imports": [
-      "_index-bd7c318a.js"
+      "_index-dcb258cc.js"
     ]
   },
   "_preload-helper-aa6bc0ce.js": {
     "file": "_app/immutable/chunks/preload-helper-aa6bc0ce.js"
   },
-  "_index-bd7c318a.js": {
-    "file": "_app/immutable/chunks/index-bd7c318a.js"
+  "_index-dcb258cc.js": {
+    "file": "_app/immutable/chunks/index-dcb258cc.js"
   },
-  "__page-6f64d7f0.js": {
-    "file": "_app/immutable/chunks/_page-6f64d7f0.js",
+  "_marked.esm-54748e82.js": {
+    "file": "_app/immutable/chunks/marked.esm-54748e82.js"
+  },
+  "__page-00e8b21f.js": {
+    "file": "_app/immutable/chunks/_page-00e8b21f.js",
     "imports": [
       "_preload-helper-aa6bc0ce.js"
     ],
     "dynamicImports": [
       "src/routes/blog/first-post/+page.md",
-      "src/routes/blog/loneliness/+page.md"
+      "src/routes/blog/loneliness/+page.md",
+      "src/routes/blog/stargazing/+page.md"
     ]
   },
-  "_post-e5d78565.js": {
-    "file": "_app/immutable/chunks/post-e5d78565.js",
+  "_post-703f9fcc.js": {
+    "file": "_app/immutable/chunks/post-703f9fcc.js",
     "imports": [
-      "_index-bd7c318a.js"
+      "_index-dcb258cc.js",
+      "_marked.esm-54748e82.js"
     ]
   },
   ".svelte-kit/generated/nodes/0.js": {
-    "file": "_app/immutable/chunks/0-08a0bc36.js",
+    "file": "_app/immutable/chunks/0-d46128dd.js",
     "src": ".svelte-kit/generated/nodes/0.js",
     "isDynamicEntry": true,
     "imports": [
@@ -131,7 +148,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-efc6c911.js",
+    "file": "_app/immutable/chunks/1-f00e9858.js",
     "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
@@ -139,7 +156,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-3845725c.js",
+    "file": "_app/immutable/chunks/2-d2394ee7.js",
     "src": ".svelte-kit/generated/nodes/2.js",
     "isDynamicEntry": true,
     "imports": [
@@ -147,16 +164,16 @@
     ]
   },
   ".svelte-kit/generated/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-a743934e.js",
+    "file": "_app/immutable/chunks/3-ce215161.js",
     "src": ".svelte-kit/generated/nodes/3.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-6f64d7f0.js",
+      "__page-00e8b21f.js",
       "src/routes/blog/+page.svelte"
     ]
   },
   ".svelte-kit/generated/nodes/4.js": {
-    "file": "_app/immutable/chunks/4-372b70cb.js",
+    "file": "_app/immutable/chunks/4-b81ddb91.js",
     "src": ".svelte-kit/generated/nodes/4.js",
     "isDynamicEntry": true,
     "imports": [
@@ -164,7 +181,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/5.js": {
-    "file": "_app/immutable/chunks/5-3737aee0.js",
+    "file": "_app/immutable/chunks/5-2fdd04bd.js",
     "src": ".svelte-kit/generated/nodes/5.js",
     "isDynamicEntry": true,
     "imports": [
@@ -172,19 +189,27 @@
     ]
   },
   ".svelte-kit/generated/nodes/6.js": {
-    "file": "_app/immutable/chunks/6-0d5dbd08.js",
+    "file": "_app/immutable/chunks/6-3a49ae6b.js",
     "src": ".svelte-kit/generated/nodes/6.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/blog/stargazing/+page.md"
+    ]
+  },
+  ".svelte-kit/generated/nodes/7.js": {
+    "file": "_app/immutable/chunks/7-0fd504d8.js",
+    "src": ".svelte-kit/generated/nodes/7.js",
     "isDynamicEntry": true,
     "imports": [
       "src/routes/portfolio/+page.svelte"
     ]
   },
-  "src/routes/+layout.css": {
-    "file": "_app/immutable/assets/_layout-5a7537a1.css",
-    "src": "src/routes/+layout.css"
-  },
   "src/routes/+page.css": {
     "file": "_app/immutable/assets/_page-a87a3290.css",
     "src": "src/routes/+page.css"
+  },
+  "src/routes/+layout.css": {
+    "file": "_app/immutable/assets/_layout-5a7537a1.css",
+    "src": "src/routes/+layout.css"
   }
 }

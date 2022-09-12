@@ -6,6 +6,8 @@
 <svelte:head>
 	<!-- elements go here -->
 	<title>Wow! Lionel's Very Own Website!</title>
+	<meta name="Lionelworks"
+		content="Homepage of all purpose technology professional Lionel Beato! Come say hello!"/>
 </svelte:head>
 
 <div class="grid grid-cols-5 grid-rows-[1fr_auto_1fr] wrapper">
