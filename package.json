@@ -1,6 +1,6 @@
 {
 	"name": "lionelworks",
-	"version": "2.0.12",
+	"version": "2.0.14",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
