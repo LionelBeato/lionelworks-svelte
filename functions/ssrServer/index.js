@@ -15167,14 +15167,14 @@ var init_layout_svelte = __esm({
     init_shims();
     init_chunks();
     Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      const version = { "name": "lionelworks", "version": "2.0.14", "scripts": { "dev": "vite dev", "build": "vite build", "package": "vite package", "preview": "vite preview", "test": "playwright test", "check": "svelte-check --tsconfig ./tsconfig.json", "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch", "lint": "prettier --check --plugin-search-dir=. . && eslint .", "format": "prettier --write --plugin-search-dir=. ." }, "devDependencies": { "@playwright/test": "^1.25.0", "@sveltejs/adapter-auto": "next", "@sveltejs/kit": "next", "@types/cookie": "^0.5.1", "@typescript-eslint/eslint-plugin": "^5.27.0", "@typescript-eslint/parser": "^5.27.0", "autoprefixer": "^10.4.7", "eslint": "^8.16.0", "eslint-config-prettier": "^8.3.0", "eslint-plugin-svelte3": "^4.0.0", "mdsvex": "^0.10.6", "postcss": "^8.4.14", "prettier": "^2.6.2", "prettier-plugin-svelte": "^2.7.0", "svelte": "^3.46.0", "svelte-check": "^2.7.1", "svelte-preprocess": "^4.10.6", "tailwindcss": "^3.1.4", "tslib": "^2.3.1", "typescript": "^4.7.2", "vite": "^3.1.0" }, "type": "module", "dependencies": { "firebase": "^9.9.0", "svelte-adapter-firebase": "^0.14.1", "svelte-markdown": "^0.2.3", "vite": "^3.1.0" } }.version;
+      const version = { "name": "lionelworks", "version": "2.0.2", "scripts": { "dev": "vite dev", "build": "vite build", "package": "vite package", "preview": "vite preview", "test": "playwright test", "check": "svelte-check --tsconfig ./tsconfig.json", "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch", "lint": "prettier --check --plugin-search-dir=. . && eslint .", "format": "prettier --write --plugin-search-dir=. ." }, "devDependencies": { "@playwright/test": "^1.25.0", "@sveltejs/adapter-auto": "next", "@sveltejs/kit": "next", "@types/cookie": "^0.5.1", "@typescript-eslint/eslint-plugin": "^5.27.0", "@typescript-eslint/parser": "^5.27.0", "autoprefixer": "^10.4.7", "eslint": "^8.16.0", "eslint-config-prettier": "^8.3.0", "eslint-plugin-svelte3": "^4.0.0", "mdsvex": "^0.10.6", "postcss": "^8.4.14", "prettier": "^2.6.2", "prettier-plugin-svelte": "^2.7.0", "svelte": "^3.46.0", "svelte-check": "^2.7.1", "svelte-preprocess": "^4.10.6", "tailwindcss": "^3.1.4", "tslib": "^2.3.1", "typescript": "^4.7.2", "vite": "^3.1.0" }, "type": "module", "dependencies": { "firebase": "^9.9.0", "svelte-adapter-firebase": "^0.14.1", "svelte-markdown": "^0.2.3", "vite": "^3.1.0" } }.version;
       return `${$$result.head += `${$$result.title = `<title>Wow! Lionel&#39;s Very Own Website!</title>`, ""}<meta name="${"Lionelworks"}" content="${"Homepage of all purpose technology professional Lionel Beato! Come say hello!"}" data-svelte="svelte-1thw53a">`, ""}
 
 <div class="${"grid grid-cols-5 grid-rows-[1fr_auto_1fr] wrapper"}"><nav class="${"head flex p-8 col-span-5"}"><a href="${"/"}"><img class="${"mr-4"}" src="${"../93c8cffd4e68e8b6ca34e6ac8d0c6d78.png"}" alt="${"A stylized L serving as a logo"}" style="${"height: 3rem;"}"></a>
 		<a id="${"portfolio"}" href="${"/portfolio"}" class="${"h-10"}">portfolio</a>
 		<a id="${"portfolio"}" href="${"/blog"}" class="${"h-10"}">blog</a>
-		<div id="${"links"}" class="${"ml-auto"}"><a href="${"http://twitter.com/lionelbeato"}"><i class="${"fab fa-twitter fa-lg"}" aria-hidden="${"true"}"></i></a>
-			<a class="${"un"}" href="${"http://twitter.com/lionelbeato"}">Twitter</a>
+		<div id="${"links"}" class="${"ml-auto"}"><a href="${"https://mastodon.online/@lionel16"}"><i class="${"fab fa-mastodon fa-lg"}" aria-hidden="${"true"}"></i></a>
+			<a class="${"un"}" href="${"https://mastodon.online/@lionel16"}">Mastodon</a>
 			<a href="${"http://github.com/lionelbeato"}"><i class="${"fab fa-github fa-lg"}" aria-hidden="${"true"}"></i></a>
 			<a class="${"un"}" href="${"http://github.com/lionelbeato"}">GitHub</a><a href="${"http://linkedin.com/in/lionelbeato"}"><i class="${"fab fa-linkedin fa-lg"}" aria-hidden="${"true"}"></i></a><a class="${"un"}" href="${"http://linkedin.com/in/lionelbeato"}">LinkedIn</a><a href="${"mailto:beato@lionel.works"}"><i class="${"fas fa-at fa-lg"}" aria-hidden="${"true"}"></i></a><a class="${"un"}" href="${"mailto:beato@lionel.works"}">email</a></div></nav>
 	${slots.default ? slots.default({}) : ``}
@@ -15201,8 +15201,8 @@ var init__ = __esm({
     init_shims();
     index = 0;
     component = async () => (await Promise.resolve().then(() => (init_layout_svelte(), layout_svelte_exports))).default;
-    file = "_app/immutable/components/pages/_layout.svelte-ab3eb4af.js";
-    imports = ["_app/immutable/components/pages/_layout.svelte-ab3eb4af.js", "_app/immutable/chunks/index-dcb258cc.js"];
+    file = "_app/immutable/components/pages/_layout.svelte-2f4a2ee4.js";
+    imports = ["_app/immutable/components/pages/_layout.svelte-2f4a2ee4.js", "_app/immutable/chunks/index-dcb258cc.js"];
     stylesheets = ["_app/immutable/assets/_layout-5a7537a1.css"];
   }
 });
@@ -15290,8 +15290,8 @@ var init__2 = __esm({
     init_shims();
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    file2 = "_app/immutable/components/error.svelte-a93db80c.js";
-    imports2 = ["_app/immutable/components/error.svelte-a93db80c.js", "_app/immutable/chunks/index-dcb258cc.js", "_app/immutable/chunks/singletons-17454a8f.js"];
+    file2 = "_app/immutable/components/error.svelte-930643ef.js";
+    imports2 = ["_app/immutable/components/error.svelte-930643ef.js", "_app/immutable/chunks/index-dcb258cc.js", "_app/immutable/chunks/singletons-2e0c3c5a.js"];
     stylesheets2 = [];
   }
 });
@@ -17510,9 +17510,10 @@ var init_page_svelte2 = __esm({
     Page5 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { data } = $$props;
       console.log(`data exported`, data);
+      const posts2 = data.posts.reverse();
       if ($$props.data === void 0 && $$bindings.data && data !== void 0)
         $$bindings.data(data);
-      return `<main class="${"col-span-5 sm:col-start-2 sm:col-end-5 m-auto p-8"}"><ul>${each(data.posts, (post) => {
+      return `<main class="${"col-span-5 sm:col-start-2 sm:col-end-5 m-auto p-8"}"><ul>${each(posts2, (post) => {
         return `<article class="${"p-6"}"><a rel="${"prefetch"}" href="${"blog/" + escape(post.slug, true)}"><h2 class="${"text-3xl my-2 font-bold"}">${escape(post.title)}</h2>
 					<p class="${"italic font-light"}">${escape(post.outline)}
 					</p></a>
@@ -17539,8 +17540,8 @@ var init__4 = __esm({
     init_page_ts();
     index4 = 3;
     component4 = async () => (await Promise.resolve().then(() => (init_page_svelte2(), page_svelte_exports2))).default;
-    file4 = "_app/immutable/components/pages/blog/_page.svelte-6b8e624f.js";
-    imports4 = ["_app/immutable/components/pages/blog/_page.svelte-6b8e624f.js", "_app/immutable/chunks/index-dcb258cc.js", "_app/immutable/chunks/marked.esm-54748e82.js", "_app/immutable/modules/pages/blog/_page.ts-968936b0.js", "_app/immutable/chunks/preload-helper-aa6bc0ce.js", "_app/immutable/chunks/_page-00e8b21f.js"];
+    file4 = "_app/immutable/components/pages/blog/_page.svelte-4f43c08f.js";
+    imports4 = ["_app/immutable/components/pages/blog/_page.svelte-4f43c08f.js", "_app/immutable/chunks/index-dcb258cc.js", "_app/immutable/chunks/marked.esm-54748e82.js", "_app/immutable/modules/pages/blog/_page.ts-968936b0.js", "_app/immutable/chunks/preload-helper-aa6bc0ce.js", "_app/immutable/chunks/_page-00e8b21f.js"];
     stylesheets4 = [];
   }
 });
@@ -20080,7 +20081,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["93c8cffd4e68e8b6ca34e6ac8d0c6d78.png", "face.png", "favicon.png"]),
   mimeTypes: { ".png": "image/png" },
   _: {
-    entry: { "file": "_app/immutable/start-18712cd0.js", "imports": ["_app/immutable/start-18712cd0.js", "_app/immutable/chunks/preload-helper-aa6bc0ce.js", "_app/immutable/chunks/index-dcb258cc.js", "_app/immutable/chunks/singletons-17454a8f.js"], "stylesheets": [] },
+    entry: { "file": "_app/immutable/start-485b7cf0.js", "imports": ["_app/immutable/start-485b7cf0.js", "_app/immutable/chunks/preload-helper-aa6bc0ce.js", "_app/immutable/chunks/index-dcb258cc.js", "_app/immutable/chunks/singletons-2e0c3c5a.js"], "stylesheets": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

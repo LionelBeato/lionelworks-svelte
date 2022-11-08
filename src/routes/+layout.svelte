@@ -23,10 +23,10 @@
 		<a id="portfolio" href="/portfolio" class="h-10">portfolio</a>
 		<a id="portfolio" href="/blog" class="h-10">blog</a>
 		<div id="links" class="ml-auto">
-			<a href="http://twitter.com/lionelbeato">
-				<i class="fab fa-twitter fa-lg" aria-hidden="true" />
+			<a href="https://mastodon.online/@lionel16">
+				<i class="fab fa-mastodon fa-lg" aria-hidden="true" />
 			</a>
-			<a class="un" href="http://twitter.com/lionelbeato">Twitter</a>
+			<a class="un" href="https://mastodon.online/@lionel16">Mastodon</a>
 			<a href="http://github.com/lionelbeato">
 				<i class="fab fa-github fa-lg" aria-hidden="true" />
 			</a>
